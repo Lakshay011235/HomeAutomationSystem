@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "formatters": {
+        "standard": {
+                "format": "%(filename)-20s | %(funcName)-30s \t\t %(message)s"
+            }
+    },
+    "handlers": {
+        "file_handler": {
+            "class": "logging.FileHandler",
+            "formatter": "standard",
+            "filename": "Tests/serverTests.log"
+        }
+    },
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["file_handler"]
+    }
+}
