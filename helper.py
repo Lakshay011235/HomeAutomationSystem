@@ -1,7 +1,7 @@
-import socket
+from socket import socket, AF_INET, SOCK_STREAM
 
-HOST = '127.0.0.1'
-PORT = 9090
+HOST_ADDRESS = '127.0.0.1'
+PORT_ADDRESS = 9090
 
 def isPortAvailable(host : str, port: int) -> bool:
     """
@@ -21,7 +21,7 @@ def isPortAvailable(host : str, port: int) -> bool:
         False if the port is not available.
     """
     try:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock = socket(AF_INET, SOCK_STREAM)
         sock.settimeout(1)
         sock.connect((host, port))
         sock.close()

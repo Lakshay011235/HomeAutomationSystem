@@ -6,7 +6,6 @@
         },
         "detailed": {
             "format": "%(asctime)s | %(levelname)-10s | %(name)-10s | %(filename)-10s | %(funcName)s [%(lineno)d]\t|| %(message)s"
-
         }
     },
     "handlers": {

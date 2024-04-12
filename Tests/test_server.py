@@ -6,9 +6,13 @@ with open('Tests/serverLoggingConfig.json', 'r') as config_file:
     config = json.load(config_file)
     logging.config.dictConfig(config)
 
+import server as sc
+
+
 @pytest.fixture(scope="module")
 def server():
     # server = start_server()  # Replace this with your server startup code
+    sc.createServer()
     # yield server
     # server.shutdown()  # Replace this with your server shutdown code
     pass
