@@ -1,7 +1,17 @@
-from socket import socket, AF_INET, SOCK_STREAM
+import socket
 
-HOST_ADDRESS = '127.0.0.1'
-PORT_ADDRESS = 9090
+SERVER_HOST_ADDRESS = socket.gethostbyname(socket.gethostname())
+SERVER_PORT_ADDRESS = 9090
+
+# defines first message length in bytes
+# used for setting future message lengths in bytes
+HEADER = 64
+
+# default format used over internet connections
+FORMAT = 'utf-8'
+
+DISCONNECT_TIMEOUT = 5000
+DISCONNECT_MESSAGE = "Disconnect"
 
 def isPortAvailable(host : str, port: int) -> bool:
     """
@@ -21,7 +31,7 @@ def isPortAvailable(host : str, port: int) -> bool:
         False if the port is not available.
     """
     try:
-        sock = socket(AF_INET, SOCK_STREAM)
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)
         sock.connect((host, port))
         sock.close()
