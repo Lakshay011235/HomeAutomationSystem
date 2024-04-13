@@ -1,0 +1,445 @@
+2024-04-12 21:34:13,645 | INFO       | root       | server.py  | <module> [61]	|| [STARTING] server is starting...
+2024-04-12 21:34:13,645 | INFO       | root       | server.py  | start [52]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:35:51,711 | INFO       | root       | server.py  | <module> [61]	|| [STARTING] server is starting...
+2024-04-12 21:35:51,712 | INFO       | root       | server.py  | start [52]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:36:01,770 | INFO       | root       | server.py  | handleClient [33]	|| [NEW CONNECTION] ('192.168.56.1', 63441) connected.
+2024-04-12 21:36:01,770 | INFO       | root       | server.py  | start [59]	|| [ACTIVE CONNECTIONS] 1
+2024-04-12 21:36:01,770 | WARNING    | root       | server.py  | handleClient [46]	|| [REMOVED CONNECTION] ('192.168.56.1', 63441) disconnected.
+2024-04-12 21:36:01,771 | INFO       | root       | server.py  | handleClient [47]	|| [ACTIVE CONNECTIONS] 0
+2024-04-12 21:36:56,797 | INFO       | root       | server.py  | <module>        [61]	|| [STARTING] server is starting...
+2024-04-12 21:36:56,797 | INFO       | root       | server.py  | start           [52]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:37:02,001 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 63452) connected.
+2024-04-12 21:37:02,001 | INFO       | root       | server.py  | start           [59]	|| [ACTIVE CONNECTIONS] 1
+2024-04-12 21:37:02,001 | WARNING    | root       | server.py  | handleClient    [46]	|| [REMOVED CONNECTION] ('192.168.56.1', 63452) disconnected.
+2024-04-12 21:37:02,001 | INFO       | root       | server.py  | handleClient    [47]	|| [ACTIVE CONNECTIONS] 0
+2024-04-12 21:39:47,674 | INFO       | root       | server.py  | <module>        [62]	|| [STARTING] server is starting...
+2024-04-12 21:39:47,674 | INFO       | root       | server.py  | start           [53]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:39:51,830 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 63478) connected.
+2024-04-12 21:39:51,830 | INFO       | root       | server.py  | start           [60]	|| [ACTIVE CONNECTIONS] 1
+2024-04-12 21:39:51,831 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE FROM] ('192.168.56.1', 63478) | 13 | Hello, world!
+2024-04-12 21:39:51,831 | WARNING    | root       | server.py  | handleClient    [47]	|| [REMOVED CONNECTION] ('192.168.56.1', 63478) disconnected.
+2024-04-12 21:39:51,831 | INFO       | root       | server.py  | handleClient    [48]	|| [ACTIVE CONNECTIONS] 0
+2024-04-12 21:44:13,483 | INFO       | root       | server.py  | <module>        [63]	|| [STARTING] server is starting...
+2024-04-12 21:44:13,483 | INFO       | root       | server.py  | start           [54]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:44:23,525 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 63543) connected.
+2024-04-12 21:44:23,526 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-12 21:44:23,526 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 63543) | 13 | Hello, world!
+2024-04-12 21:47:34,886 | INFO       | root       | server.py  | <module>        [63]	|| [STARTING] server is starting...
+2024-04-12 21:47:34,886 | INFO       | root       | server.py  | start           [54]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-12 21:47:42,276 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 63597) connected.
+2024-04-12 21:47:42,276 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-12 21:47:42,277 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 63597) | 13 | Hello, world!
+2024-04-12 21:47:44,498 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 63597) | 20 | Hello, world! twice!
+2024-04-12 21:47:45,195 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 63597) disconnected.
+2024-04-12 21:47:45,196 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 14:04:11,021 | INFO       | root       | server.py  | <module>        [63]	|| [STARTING] server is starting...
+2024-04-13 14:04:11,021 | INFO       | root       | server.py  | start           [54]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 14:04:38,165 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49422) connected.
+2024-04-13 14:04:38,166 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 14:04:38,166 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49422) | 13 | Hello, world!
+2024-04-13 14:04:53,542 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49422) | 21 | Bhaiya potty wala hai
+2024-04-13 14:05:09,971 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49422) disconnected.
+2024-04-13 14:05:09,971 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 14:05:51,659 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49428) connected.
+2024-04-13 14:05:51,659 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 14:05:51,659 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49428) | 13 | Hello, world!
+2024-04-13 14:05:51,773 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49428) | 0 | 
+2024-04-13 14:05:51,942 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49428) disconnected.
+2024-04-13 14:05:51,942 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 14:05:53,497 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49429) connected.
+2024-04-13 14:05:53,497 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 14:05:53,499 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49429) | 13 | Hello, world!
+2024-04-13 14:05:53,571 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49429) | 0 | 
+2024-04-13 14:05:53,741 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49429) disconnected.
+2024-04-13 14:05:53,741 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 14:05:55,475 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49430) connected.
+2024-04-13 14:05:55,475 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 14:05:55,476 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49430) | 13 | Hello, world!
+2024-04-13 14:06:04,132 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49431) connected.
+2024-04-13 14:06:04,132 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 2
+2024-04-13 14:06:04,133 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49431) | 13 | Hello, world!
+2024-04-13 14:06:04,966 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49431) | 0 | 
+2024-04-13 14:06:09,398 | INFO       | root       | server.py  | handleClient    [33]	|| [NEW CONNECTION] ('192.168.56.1', 49433) connected.
+2024-04-13 14:06:09,398 | INFO       | root       | server.py  | start           [61]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 14:06:09,411 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49433) | 13 | Hello, world!
+2024-04-13 14:06:11,953 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49433) | 4 | asdf
+2024-04-13 14:06:33,362 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49431) disconnected.
+2024-04-13 14:06:33,366 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 2
+2024-04-13 14:06:43,966 | INFO       | root       | server.py  | handleClient    [44]	|| [MESSAGE RECEIVED] ('192.168.56.1', 49430) | 0 | 
+2024-04-13 14:06:44,488 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49430) disconnected.
+2024-04-13 14:06:44,488 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 14:06:53,730 | WARNING    | root       | server.py  | handleClient    [48]	|| [REMOVED CONNECTION] ('192.168.56.1', 49433) disconnected.
+2024-04-13 14:06:53,730 | INFO       | root       | server.py  | handleClient    [49]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 17:40:48,869 | INFO       | root       | server.py  | <module>        [74]	|| [STARTING] server is starting...
+2024-04-13 17:40:48,870 | INFO       | root       | server.py  | start           [65]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:41:06,876 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51217) connected.
+2024-04-13 17:41:06,876 | INFO       | root       | server.py  | start           [72]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:41:06,876 | INFO       | root       | server.py  | handleClient    [55]	|| [MESSAGE RECEIVED] ('192.168.56.1', 51217) | 13 | Hello, world!
+2024-04-13 17:41:14,023 | INFO       | root       | server.py  | handleClient    [55]	|| [MESSAGE RECEIVED] ('192.168.56.1', 51217) | 19 | HElloasdf asdfasdff
+2024-04-13 17:41:27,805 | WARNING    | root       | server.py  | handleClient    [59]	|| [REMOVED CONNECTION] ('192.168.56.1', 51217) disconnected.
+2024-04-13 17:41:27,805 | INFO       | root       | server.py  | handleClient    [60]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 17:42:56,209 | INFO       | root       | server.py  | <module>        [76]	|| [STARTING] server is starting...
+2024-04-13 17:42:56,209 | INFO       | root       | server.py  | start           [67]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:43:07,663 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51274) connected.
+2024-04-13 17:43:07,663 | INFO       | root       | server.py  | start           [74]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:44:16,270 | INFO       | root       | server.py  | <module>        [76]	|| [STARTING] server is starting...
+2024-04-13 17:44:16,270 | INFO       | root       | server.py  | start           [67]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:44:20,243 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51292) connected.
+2024-04-13 17:44:20,243 | INFO       | root       | server.py  | start           [74]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:45:30,647 | INFO       | root       | server.py  | <module>        [76]	|| [STARTING] server is starting...
+2024-04-13 17:45:30,647 | INFO       | root       | server.py  | start           [67]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:45:32,724 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51331) connected.
+2024-04-13 17:45:32,724 | INFO       | root       | server.py  | start           [74]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:47:17,314 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51374) connected.
+2024-04-13 17:47:17,314 | INFO       | root       | server.py  | start           [74]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:47:55,656 | INFO       | root       | server.py  | <module>        [78]	|| [STARTING] server is starting...
+2024-04-13 17:47:55,656 | INFO       | root       | server.py  | start           [69]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:48:06,952 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51379) connected.
+2024-04-13 17:48:06,952 | INFO       | root       | server.py  | start           [76]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:49:46,486 | INFO       | root       | server.py  | <module>        [78]	|| [STARTING] server is starting...
+2024-04-13 17:49:46,486 | INFO       | root       | server.py  | start           [69]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:49:51,695 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51435) connected.
+2024-04-13 17:49:51,695 | INFO       | root       | server.py  | start           [76]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 17:50:45,650 | INFO       | root       | server.py  | <module>        [78]	|| [STARTING] server is starting...
+2024-04-13 17:50:45,651 | INFO       | root       | server.py  | start           [69]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 17:50:49,116 | INFO       | root       | server.py  | handleClient    [44]	|| [NEW CONNECTION] ('192.168.56.1', 51460) connected.
+2024-04-13 17:50:49,116 | INFO       | root       | server.py  | start           [76]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 18:15:05,279 | INFO       | root       | server.py  | start           [77]	|| [STARTING] server is starting...
+2024-04-13 18:15:41,504 | INFO       | root       | server.py  | start           [77]	|| [STARTING] server is starting...
+2024-04-13 18:15:41,504 | INFO       | root       | server.py  | start           [79]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 18:16:14,498 | INFO       | root       | server.py  | start           [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:00:34,009 | INFO       | root       | server.py  | start           [93]	|| [STARTING] server is starting...
+2024-04-13 19:00:34,009 | INFO       | root       | server.py  | start           [95]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:00:54,896 | INFO       | root       | server.py  | handleClient    [56]	|| [NEW CONNECTION] ('192.168.56.1', 52752) connected.
+2024-04-13 19:00:54,896 | INFO       | root       | server.py  | start           [106]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:00:54,896 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52752) | 13 | Hello, world!
+2024-04-13 19:00:54,896 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52752) | 14 | Second message
+2024-04-13 19:00:54,896 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52752) | 12 | CLOSE_SERVER
+2024-04-13 19:00:54,898 | WARNING    | root       | server.py  | handleClient    [76]	|| [REMOVED CONNECTION] ('192.168.56.1', 52752) disconnected.
+2024-04-13 19:00:54,898 | INFO       | root       | server.py  | handleClient    [77]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:01:44,295 | INFO       | root       | server.py  | start           [93]	|| [STARTING] server is starting...
+2024-04-13 19:01:44,295 | INFO       | root       | server.py  | start           [95]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | handleClient    [56]	|| [NEW CONNECTION] ('192.168.56.1', 52780) connected.
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | start           [106]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52780) | 13 | Hello, world!
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52780) | 14 | Second message
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | handleClient    [71]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52780) | 12 | CLOSE_SERVER
+2024-04-13 19:01:52,049 | WARNING    | root       | server.py  | handleClient    [76]	|| [REMOVED CONNECTION] ('192.168.56.1', 52780) disconnected.
+2024-04-13 19:01:52,049 | INFO       | root       | server.py  | handleClient    [77]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:04:03,240 | INFO       | root       | server.py  | start           [95]	|| [STARTING] server is starting...
+2024-04-13 19:04:03,240 | INFO       | root       | server.py  | start           [97]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | handleClient    [56]	|| [NEW CONNECTION] ('192.168.56.1', 52806) connected.
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | start           [108]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | handleClient    [72]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52806) | 13 | Hello, world!
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | handleClient    [72]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52806) | 14 | Second message
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | handleClient    [72]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52806) | 12 | CLOSE_SERVER
+2024-04-13 19:04:08,215 | WARNING    | root       | server.py  | handleClient    [78]	|| [REMOVED CONNECTION] ('192.168.56.1', 52806) disconnected.
+2024-04-13 19:04:08,215 | INFO       | root       | server.py  | handleClient    [79]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:26:15,774 | INFO       | root       | server.py  | start           [96]	|| [STARTING] server is starting...
+2024-04-13 19:26:15,775 | INFO       | root       | server.py  | start           [98]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:26:20,286 | INFO       | root       | server.py  | handleClient    [57]	|| [NEW CONNECTION] ('192.168.56.1', 52985) connected.
+2024-04-13 19:26:20,286 | INFO       | root       | server.py  | start           [109]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:26:20,286 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52985) | 13 | Hello, world!
+2024-04-13 19:26:20,286 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52985) | 14 | Second message
+2024-04-13 19:26:20,286 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52985) | 12 | CLOSE_SERVER
+2024-04-13 19:26:20,288 | WARNING    | root       | server.py  | handleClient    [79]	|| [REMOVED CONNECTION] ('192.168.56.1', 52985) disconnected.
+2024-04-13 19:26:20,288 | INFO       | root       | server.py  | handleClient    [80]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:26:31,387 | INFO       | root       | server.py  | handleClient    [57]	|| [NEW CONNECTION] ('192.168.56.1', 52987) connected.
+2024-04-13 19:26:31,387 | INFO       | root       | server.py  | start           [109]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 19:26:31,387 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52987) | 13 | Hello, world!
+2024-04-13 19:26:31,387 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52987) | 14 | Second message
+2024-04-13 19:26:31,388 | INFO       | root       | server.py  | handleClient    [73]	|| [MESSAGE RECEIVED] ('192.168.56.1', 52987) | 12 | CLOSE_SERVER
+2024-04-13 19:26:31,388 | WARNING    | root       | server.py  | handleClient    [79]	|| [REMOVED CONNECTION] ('192.168.56.1', 52987) disconnected.
+2024-04-13 19:26:31,388 | INFO       | root       | server.py  | handleClient    [80]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:55:34,598 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 19:55:34,598 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:55:41,705 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53132) connected.
+2024-04-13 19:55:41,705 | INFO       | root       | server.py  | start           [114]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:57:07,138 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 19:57:07,139 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:57:10,072 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53150) connected.
+2024-04-13 19:57:10,073 | INFO       | root       | server.py  | start           [114]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:57:10,073 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53150) | 13 | Hello, world!
+2024-04-13 19:57:10,073 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53150) | 14 | Second message
+2024-04-13 19:57:10,073 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53150) | 12 | CLOSE_SERVER
+2024-04-13 19:57:10,073 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53150) disconnected.
+2024-04-13 19:57:10,073 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 19:57:59,788 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 19:57:59,789 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53158) connected.
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | start           [114]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53158) | 13 | Hello, world!
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53158) | 14 | Second message
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53158) | 12 | CLOSE_SERVER
+2024-04-13 19:58:10,015 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53158) disconnected.
+2024-04-13 19:58:10,015 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:01:08,243 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:01:08,243 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:01:10,672 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53178) connected.
+2024-04-13 20:01:10,672 | INFO       | root       | server.py  | start           [114]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:01:10,672 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53178) | 13 | Hello, world!
+2024-04-13 20:01:10,673 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53178) | 14 | Second message
+2024-04-13 20:01:10,673 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53178) | 12 | CLOSE_SERVER
+2024-04-13 20:01:10,673 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53178) disconnected.
+2024-04-13 20:01:10,674 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:09:58,431 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:09:58,431 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:10:01,192 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53246) connected.
+2024-04-13 20:10:01,192 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:10:01,192 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53246) | 13 | Hello, world!
+2024-04-13 20:10:01,193 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53246) | 14 | Second message
+2024-04-13 20:10:01,193 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53246) | 12 | CLOSE_SERVER
+2024-04-13 20:10:01,193 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53246) disconnected.
+2024-04-13 20:10:01,193 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:11:29,179 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:11:29,179 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:11:31,786 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53263) connected.
+2024-04-13 20:11:31,786 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:11:31,787 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53263) | 13 | Hello, world!
+2024-04-13 20:11:31,788 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53263) | 14 | Second message
+2024-04-13 20:11:31,788 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53263) | 12 | CLOSE_SERVER
+2024-04-13 20:11:31,788 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53263) disconnected.
+2024-04-13 20:11:31,788 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:11:38,976 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53264) connected.
+2024-04-13 20:11:38,976 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:12:37,463 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:12:37,463 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:12:41,330 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53271) connected.
+2024-04-13 20:12:41,331 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:12:41,331 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53271) | 13 | Hello, world!
+2024-04-13 20:12:41,331 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53271) | 14 | Second message
+2024-04-13 20:12:41,331 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53271) | 12 | CLOSE_SERVER
+2024-04-13 20:12:41,331 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53271) disconnected.
+2024-04-13 20:12:41,331 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:12:43,835 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53272) connected.
+2024-04-13 20:12:43,835 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:13:01,335 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53272) | 13 | Hello, world!
+2024-04-13 20:13:01,337 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53272) | 14 | Second message
+2024-04-13 20:13:01,339 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53272) | 12 | CLOSE_SERVER
+2024-04-13 20:13:01,339 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53272) disconnected.
+2024-04-13 20:13:01,339 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:13:01,417 | INFO       | root       | server.py  | handleClient    [58]	|| [NEW CONNECTION] ('192.168.56.1', 53276) connected.
+2024-04-13 20:13:01,417 | INFO       | root       | server.py  | start           [113]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:13:21,342 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53276) | 13 | Hello, world!
+2024-04-13 20:13:21,343 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53276) | 14 | Second message
+2024-04-13 20:13:21,343 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53276) | 12 | CLOSE_SERVER
+2024-04-13 20:13:21,343 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53276) disconnected.
+2024-04-13 20:13:21,344 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:13:41,347 | CRITICAL   | root       | server.py  | shutdown        [125]	|| [SERVER CLOSED]
+2024-04-13 20:27:18,953 | INFO       | root       | server.py  | start           [102]	|| [STARTING] server is starting...
+2024-04-13 20:27:18,954 | INFO       | root       | server.py  | start           [104]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:27:22,352 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53375) connected.
+2024-04-13 20:27:22,352 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:27:22,352 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53375) | 13 | Hello, world!
+2024-04-13 20:27:22,352 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53375) | 14 | Second message
+2024-04-13 20:27:22,352 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53375) | 12 | CLOSE_SERVER
+2024-04-13 20:27:22,354 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53375) disconnected.
+2024-04-13 20:27:22,354 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:27:29,993 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53377) connected.
+2024-04-13 20:27:29,993 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:27:29,994 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53377) | 13 | Hello, world!
+2024-04-13 20:27:29,994 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53377) | 14 | Second message
+2024-04-13 20:27:29,995 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53377) | 12 | CLOSE_SERVER
+2024-04-13 20:27:29,995 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53377) disconnected.
+2024-04-13 20:27:29,995 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:27:36,773 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53378) connected.
+2024-04-13 20:27:36,773 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:27:36,773 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53378) | 13 | Hello, world!
+2024-04-13 20:27:36,773 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53378) | 14 | Second message
+2024-04-13 20:27:36,774 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53378) | 12 | CLOSE_SERVER
+2024-04-13 20:27:36,774 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53378) disconnected.
+2024-04-13 20:27:36,774 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:27:47,778 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 20:28:14,687 | INFO       | root       | server.py  | start           [102]	|| [STARTING] server is starting...
+2024-04-13 20:28:14,687 | INFO       | root       | server.py  | start           [104]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:28:17,076 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53382) connected.
+2024-04-13 20:28:17,076 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:28:17,076 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53382) | 13 | Hello, world!
+2024-04-13 20:28:17,076 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53382) | 14 | Second message
+2024-04-13 20:28:17,076 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53382) | 12 | CLOSE_SERVER
+2024-04-13 20:28:17,079 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53382) disconnected.
+2024-04-13 20:28:17,079 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:28:20,234 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53383) connected.
+2024-04-13 20:28:20,234 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:28:21,081 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53383) | 13 | Hello, world!
+2024-04-13 20:28:21,081 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53383) | 14 | Second message
+2024-04-13 20:28:21,081 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53383) | 12 | CLOSE_SERVER
+2024-04-13 20:28:21,084 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53383) disconnected.
+2024-04-13 20:28:21,084 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:28:32,093 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 20:30:23,803 | INFO       | root       | server.py  | start           [102]	|| [STARTING] server is starting...
+2024-04-13 20:30:23,803 | INFO       | root       | server.py  | start           [104]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:30:26,001 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53396) connected.
+2024-04-13 20:30:26,001 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:30:26,002 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53396) | 13 | Hello, world!
+2024-04-13 20:30:26,002 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53396) | 14 | Second message
+2024-04-13 20:30:26,002 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53396) | 12 | CLOSE_SERVER
+2024-04-13 20:30:26,003 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53396) disconnected.
+2024-04-13 20:30:26,003 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:30:26,929 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53397) connected.
+2024-04-13 20:30:26,929 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:30:28,004 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53397) | 13 | Hello, world!
+2024-04-13 20:30:28,004 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53397) | 14 | Second message
+2024-04-13 20:30:28,004 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53397) | 12 | CLOSE_SERVER
+2024-04-13 20:30:28,004 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53397) disconnected.
+2024-04-13 20:30:28,004 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:30:28,106 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53398) connected.
+2024-04-13 20:30:28,106 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 3
+2024-04-13 20:30:30,010 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53398) | 13 | Hello, world!
+2024-04-13 20:30:30,011 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53398) | 14 | Second message
+2024-04-13 20:30:30,011 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53398) | 12 | CLOSE_SERVER
+2024-04-13 20:30:30,011 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 53398) disconnected.
+2024-04-13 20:30:30,011 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:30:41,022 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 20:38:18,764 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:38:18,765 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53434) connected.
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53434) | 13 | Hello, world!
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53434) | 14 | Second message
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53434) | 12 | CLOSE_SERVER
+2024-04-13 20:38:20,948 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53434) disconnected.
+2024-04-13 20:38:20,948 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:38:24,139 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53435) connected.
+2024-04-13 20:38:24,139 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:38:24,954 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53435) | 13 | Hello, world!
+2024-04-13 20:38:24,955 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53435) | 14 | Second message
+2024-04-13 20:38:24,956 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53435) | 12 | CLOSE_SERVER
+2024-04-13 20:38:24,956 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53435) disconnected.
+2024-04-13 20:38:24,956 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:38:35,964 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 20:39:32,435 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 20:39:32,435 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53436) connected.
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53436) | 13 | Hello, world!
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53436) | 14 | Second message
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53436) | 12 | CLOSE_SERVER
+2024-04-13 20:39:34,108 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53436) disconnected.
+2024-04-13 20:39:34,108 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 20:39:45,120 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 22:09:10,997 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 22:09:10,999 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:09:14,420 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53974) connected.
+2024-04-13 22:09:14,420 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:09:14,420 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53974) | 13 | Hello, world!
+2024-04-13 22:09:14,421 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53974) disconnected.
+2024-04-13 22:09:14,421 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:09:25,427 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 22:09:35,038 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 22:09:35,039 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:09:37,714 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53982) connected.
+2024-04-13 22:09:37,714 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:09:37,714 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53982) | 13 | Hello, world!
+2024-04-13 22:09:37,714 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 53982) disconnected.
+2024-04-13 22:09:37,714 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:09:48,722 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 22:09:50,142 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 22:09:50,142 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:09:53,421 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 53985) connected.
+2024-04-13 22:09:53,421 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:09:53,421 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 53985) | 13 | Hello, world!
+2024-04-13 22:11:33,531 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54000) connected.
+2024-04-13 22:11:33,531 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 2
+2024-04-13 22:11:33,531 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54000) | 13 | Hello, world!
+2024-04-13 22:11:33,531 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 54000) disconnected.
+2024-04-13 22:11:33,532 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:11:39,844 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54001) connected.
+2024-04-13 22:11:39,844 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 2
+2024-04-13 22:11:39,845 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54001) | 13 | Hello, world!
+2024-04-13 22:11:39,845 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 54001) disconnected.
+2024-04-13 22:11:39,845 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:27:24,924 | INFO       | root       | server.py  | start           [104]	|| [STARTING] server is starting...
+2024-04-13 22:27:24,924 | INFO       | root       | server.py  | start           [106]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:27:29,148 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54264) connected.
+2024-04-13 22:27:29,148 | INFO       | root       | server.py  | start           [120]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:27:29,148 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54264) | 13 | Hello, world!
+2024-04-13 22:27:29,148 | WARNING    | root       | server.py  | handleClient    [87]	|| [REMOVED CONNECTION] ('192.168.56.1', 54264) disconnected.
+2024-04-13 22:27:29,148 | INFO       | root       | server.py  | handleClient    [88]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:27:33,929 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54265) connected.
+2024-04-13 22:27:33,929 | INFO       | root       | server.py  | start           [120]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:27:35,151 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54265) | 13 | Hello, world!
+2024-04-13 22:27:55,065 | INFO       | root       | server.py  | start           [104]	|| [STARTING] server is starting...
+2024-04-13 22:27:55,066 | INFO       | root       | server.py  | start           [106]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:27:59,816 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54270) connected.
+2024-04-13 22:27:59,816 | INFO       | root       | server.py  | start           [120]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:27:59,816 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54270) | 13 | Hello, world!
+2024-04-13 22:29:42,473 | INFO       | root       | server.py  | start           [105]	|| [STARTING] server is starting...
+2024-04-13 22:29:42,473 | INFO       | root       | server.py  | start           [107]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:29:45,715 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54303) connected.
+2024-04-13 22:29:45,715 | INFO       | root       | server.py  | start           [121]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:29:45,715 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54303) | 13 | Hello, world!
+2024-04-13 22:30:18,587 | INFO       | root       | server.py  | start           [105]	|| [STARTING] server is starting...
+2024-04-13 22:30:18,587 | INFO       | root       | server.py  | start           [107]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:30:23,596 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54310) connected.
+2024-04-13 22:30:23,596 | INFO       | root       | server.py  | start           [121]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:30:23,596 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54310) | 13 | Hello, world!
+2024-04-13 22:30:23,597 | WARNING    | root       | server.py  | handleClient    [88]	|| [REMOVED CONNECTION] ('192.168.56.1', 54310) disconnected.
+2024-04-13 22:30:23,597 | INFO       | root       | server.py  | handleClient    [89]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:30:26,878 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54311) connected.
+2024-04-13 22:30:26,878 | INFO       | root       | server.py  | start           [121]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:30:27,599 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54311) | 13 | Hello, world!
+2024-04-13 22:30:27,600 | WARNING    | root       | server.py  | handleClient    [88]	|| [REMOVED CONNECTION] ('192.168.56.1', 54311) disconnected.
+2024-04-13 22:30:27,600 | INFO       | root       | server.py  | handleClient    [89]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:30:30,716 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54312) connected.
+2024-04-13 22:30:30,716 | INFO       | root       | server.py  | start           [121]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:30:31,603 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54312) | 13 | Hello, world!
+2024-04-13 22:30:31,603 | WARNING    | root       | server.py  | handleClient    [88]	|| [REMOVED CONNECTION] ('192.168.56.1', 54312) disconnected.
+2024-04-13 22:30:31,603 | INFO       | root       | server.py  | handleClient    [89]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:30:31,951 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54313) connected.
+2024-04-13 22:30:31,952 | INFO       | root       | server.py  | start           [121]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:30:33,604 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54313) | 13 | Hello, world!
+2024-04-13 22:30:33,604 | WARNING    | root       | server.py  | handleClient    [88]	|| [REMOVED CONNECTION] ('192.168.56.1', 54313) disconnected.
+2024-04-13 22:30:33,606 | INFO       | root       | server.py  | handleClient    [89]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:30:44,612 | CRITICAL   | root       | server.py  | shutdown        [134]	|| [SERVER CLOSED]
+2024-04-13 22:34:04,275 | INFO       | root       | server.py  | start           [103]	|| [STARTING] server is starting...
+2024-04-13 22:34:04,277 | INFO       | root       | server.py  | start           [105]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:34:07,739 | INFO       | root       | server.py  | handleClient    [60]	|| [NEW CONNECTION] ('192.168.56.1', 54369) connected.
+2024-04-13 22:34:07,739 | INFO       | root       | server.py  | start           [119]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:34:07,739 | INFO       | root       | server.py  | handleClient    [79]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54369) | 13 | Hello, world!
+2024-04-13 22:34:07,740 | WARNING    | root       | server.py  | handleClient    [86]	|| [REMOVED CONNECTION] ('192.168.56.1', 54369) disconnected.
+2024-04-13 22:34:07,740 | INFO       | root       | server.py  | handleClient    [87]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:34:18,740 | CRITICAL   | root       | server.py  | shutdown        [132]	|| [SERVER CLOSED]
+2024-04-13 22:36:33,857 | INFO       | root       | server.py  | start           [102]	|| [STARTING] server is starting...
+2024-04-13 22:36:33,858 | INFO       | root       | server.py  | start           [104]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:36:36,275 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54394) connected.
+2024-04-13 22:36:36,275 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:36:36,275 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54394) | 13 | Hello, world!
+2024-04-13 22:36:36,276 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 54394) disconnected.
+2024-04-13 22:36:36,276 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:36:38,980 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54396) connected.
+2024-04-13 22:36:38,980 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:36:40,278 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54396) | 13 | Hello, world!
+2024-04-13 22:36:40,279 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 54396) disconnected.
+2024-04-13 22:36:40,279 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:36:44,033 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54397) connected.
+2024-04-13 22:36:44,033 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:36:44,281 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54397) | 13 | Hello, world!
+2024-04-13 22:36:44,282 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 54397) disconnected.
+2024-04-13 22:36:44,282 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:36:55,288 | CRITICAL   | root       | server.py  | shutdown        [131]	|| [SERVER CLOSED]
+2024-04-13 22:51:46,809 | INFO       | root       | server.py  | start           [102]	|| [STARTING] server is starting...
+2024-04-13 22:51:46,809 | INFO       | root       | server.py  | start           [104]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:51:48,889 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54565) connected.
+2024-04-13 22:51:48,889 | INFO       | root       | server.py  | start           [118]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:51:48,889 | INFO       | root       | server.py  | handleClient    [78]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54565) | 13 | Hello, world!
+2024-04-13 22:51:48,889 | WARNING    | root       | server.py  | handleClient    [85]	|| [REMOVED CONNECTION] ('192.168.56.1', 54565) disconnected.
+2024-04-13 22:51:48,889 | INFO       | root       | server.py  | handleClient    [86]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:51:59,908 | CRITICAL   | root       | server.py  | shutdown        [131]	|| [SERVER CLOSED]
+2024-04-13 22:52:34,341 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 22:52:34,341 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)
+2024-04-13 22:52:36,294 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54580) connected.
+2024-04-13 22:52:36,294 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:52:36,294 | INFO       | root       | server.py  | handleClient    [77]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54580) | 13 | Hello, world!
+2024-04-13 22:52:36,295 | INFO       | root       | server.py  | handleClient    [77]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54580) | 10 | Disconnect
+2024-04-13 22:52:36,295 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 54580) disconnected.
+2024-04-13 22:52:36,295 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:52:40,408 | INFO       | root       | server.py  | handleClient    [59]	|| [NEW CONNECTION] ('192.168.56.1', 54582) connected.
+2024-04-13 22:52:40,408 | INFO       | root       | server.py  | start           [117]	|| [ACTIVE CONNECTIONS] 1
+2024-04-13 22:52:42,298 | INFO       | root       | server.py  | handleClient    [77]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54582) | 13 | Hello, world!
+2024-04-13 22:52:42,299 | INFO       | root       | server.py  | handleClient    [77]	|| [MESSAGE RECEIVED] ('192.168.56.1', 54582) | 10 | Disconnect
+2024-04-13 22:52:42,299 | WARNING    | root       | server.py  | handleClient    [84]	|| [REMOVED CONNECTION] ('192.168.56.1', 54582) disconnected.
+2024-04-13 22:52:42,299 | INFO       | root       | server.py  | handleClient    [85]	|| [ACTIVE CONNECTIONS] 0
+2024-04-13 22:52:53,305 | CRITICAL   | root       | server.py  | shutdown        [130]	|| [SERVER CLOSED]
+2024-04-13 22:56:53,179 | INFO       | root       | server.py  | start           [101]	|| [STARTING] server is starting...
+2024-04-13 22:56:53,179 | INFO       | root       | server.py  | start           [103]	|| [LISTENING] server is listening on port ('192.168.56.1', 9090)

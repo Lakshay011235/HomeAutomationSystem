@@ -1,28 +1,37 @@
 import logging.config
 import json
 import pytest
+import threading
+import time
+from src.server import Server
+from src.client import Client
+from src.helper import SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS, HEADER_SIZE, FORMAT, DISCONNECT_MESSAGE
 
 with open('Tests/serverLoggingConfig.json', 'r') as config_file:
     config = json.load(config_file)
     logging.config.dictConfig(config)
 
-import server as sc
-
-
+# Fixture to start and stop the server
 @pytest.fixture(scope="module")
 def server():
-    # server = start_server()  # Replace this with your server startup code
-    sc.createServer()
-    # yield server
-    # server.shutdown()  # Replace this with your server shutdown code
-    pass
+    server = Server()
+    server_thread = threading.Thread(target=server.start)
+    server_thread.start()
+    yield server
+    server.shutdown()
+    server_thread.join()
 
-def test_server_functionality(server):
-    # Write your test code here
-    # response = server.make_request()  # Example function call
-    # assert response == expected_response
-    condition = True
-    assert condition
-    test_result = "PASSED" if True else "FAILED"
-    logging.info(f"[{test_result}]")
+# Fixture to create a client
+@pytest.fixture(scope="module")
+def client():
+    client = Client()
+    return client
+
+# Test basic server-client interaction
+def test_server_client_interaction(server, client):
+    client.send("Hello, server!")
+    time.sleep(1)  # Wait for the message to be sent
+    assert True  # If the test reaches this point without errors, it passed
+    # logging.info(f"[{test_result}]")
+    
 
