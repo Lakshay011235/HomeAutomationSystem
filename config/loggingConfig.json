@@ -11,7 +11,7 @@
     "handlers": {
         "file_handler": {
             "class": "logging.FileHandler",
-            "filename": "server.log",
+            "filename": "logs/server.log",
             "formatter": "detailed",
             "level": "DEBUG"
         },

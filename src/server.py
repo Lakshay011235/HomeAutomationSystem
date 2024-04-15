@@ -15,15 +15,15 @@ logging.config.dictConfig(json.load(open('config/loggingConfig.json', 'r')))
     #     print(failResponse)
     #     return False
     
-    # serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # _serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
     # try:
-    #     serverSocket.bind((SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS))
+    #     _serverSocket.bind((SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS))
         
     # except Exception as e:
     #     logging.exception("Error in server")
         
-    # serverSocket.close()
+    # _serverSocket.close()
 
 
 
@@ -46,20 +46,20 @@ logging.config.dictConfig(json.load(open('config/loggingConfig.json', 'r')))
 
 class Server:
     def __init__(self):
-        self.serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.serverSocket.bind((SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS))
-        self.connections = {}
-        self.isRunning = False
-        self.isClosing = False
-        self.autoCloseTimer = None
-        self.idleMessenger = None
+        self._serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self._serverSocket.bind((SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS))
+        self._connections = {}
+        self._isRunning = False
+        self._isClosing = False
+        self._autoCloseTimer = None
+        self._idleMessenger = None
     
-    def handleClient(self, conn, addr):
+    def _handleClient(self, conn, addr):
         logging.info(f"[NEW CONNECTION] {addr} connected.")
         connected = True
         
         if connected:
-            self.resetAutoCloseTimer()
+            self._resetAutoCloseTimer()
             
         while connected:
             # print(decodeMessagePacket(conn.recv(5000)))
@@ -71,7 +71,7 @@ class Server:
                 if msg == DISCONNECT_MESSAGE:
                     connected = False
                 # Save client data
-                self.saveClientData(addr, msg)
+                self._saveClientData(addr, msg)
                 
                 logging.info(f"[MESSAGE RECEIVED] {addr} | {msgLength} | {msg}")
                 conn.send(encodeResponsePacket(REQUEST_SUCCESS, msg))
@@ -79,49 +79,50 @@ class Server:
                 conn.send(encodeResponsePacket(REQUEST_FAILURE, "Could not connect to server"))
 
         conn.close()
-        self.connections.pop(addr)
+        self._connections.pop(addr)
         logging.warning(f"[REMOVED CONNECTION] {addr} disconnected.")
-        logging.info(f"[ACTIVE CONNECTIONS] {len(self.connections)}")
+        logging.info(f"[ACTIVE CONNECTIONS] {len(self._connections)}")
 
-        # Check if all connections are closed and start auto-close timer if needed
-        if len(self.connections) == 0:
-            self.isClosing = True
-            self.startAutoCloseTimer()
+        # Check if all _connections are closed and start auto-close timer if needed
+        if len(self._connections) == 0:
+            self._isClosing = True
+            self._startAutoCloseTimer()
 
 
-    def saveClientData(self, addr, msg):
+    def _saveClientData(self, addr, msg):
         # Add time to msg
-        if addr in self.connections:
-            self.connections[addr].append(msg)
+        time.sleep(1)
+        if addr in self._connections:
+            self._connections[addr].append(msg)
         else:
-            self.connections[addr] = [msg]
+            self._connections[addr] = [msg]
             
     def start(self):
         logging.info("[STARTING] server is starting...")
-        self.serverSocket.listen()
-        logging.info(f"[LISTENING] server is listening on port {self.serverSocket.getsockname()}")
-        self.isRunning = True
-        while self.isRunning:
+        self._serverSocket.listen()
+        logging.info(f"[LISTENING] server is listening on port {self._serverSocket.getsockname()}")
+        self._isRunning = True
+        while self._isRunning:
             try:
                 # conn = client socket object
                 # addr = client address
-                conn, addr  = self.serverSocket.accept()
+                conn, addr  = self._serverSocket.accept()
                 
                 # Stop the server autoClose and IDLE messages
-                self.isClosing = False
+                self._isClosing = False
                 
                 # Create a thread for each client-connection
-                thread = threading.Thread(target=self.handleClient, args=(conn, addr))
+                thread = threading.Thread(target=self._handleClient, args=(conn, addr))
                 thread.start()
-                logging.info(f"[ACTIVE CONNECTIONS] {len(self.connections)+1}")
+                logging.info(f"[ACTIVE CONNECTIONS] {len(self._connections)+1}")
                 
             except OSError as e:
-                if self.isRunning:
-                    logging.error("[SERVER ERROR] OSError | Error in accepting connection")
+                if self._isRunning:
+                    logging.exception("[SERVER ERROR] OSError | Error in accepting connection")
         
-    def shutdown(self):
+    def _shutdown(self):
         try:
-            self.serverSocket.close()
+            self._serverSocket.close()
             # Wait for all client threads to finish
             for thread in threading.enumerate():
                 if thread != threading.current_thread():
@@ -130,40 +131,38 @@ class Server:
         except Exception as e:
             logging.exception(f"[SERVER ERROR] {type(e).__name__}")
         
-    def startAutoCloseTimer(self):
-        self.autoCloseTimer = threading.Timer(DISCONNECT_TIMEOUT+1, self.checkAndClose)
-        self.idleMessenger = threading.Thread(target=self.idleMessage)
-        self.autoCloseTimer.start()
-        self.idleMessenger.start()
-        self.isClosing = True
+    def _startAutoCloseTimer(self):
+        self._autoCloseTimer = threading.Timer(DISCONNECT_TIMEOUT+1, self._checkAndClose)
+        self._idleMessenger = threading.Thread(target=self._idleMessage)
+        self._autoCloseTimer.start()
+        self._idleMessenger.start()
+        self._isClosing = True
         
-    def resetAutoCloseTimer(self):
-        self.isClosing = False
-        if self.autoCloseTimer:
-            self.autoCloseTimer.cancel()
-        if self.idleMessenger:
-            self.idleMessenger.join()
+    def _resetAutoCloseTimer(self):
+        self._isClosing = False
+        if self._autoCloseTimer:
+            self._autoCloseTimer.cancel()
+        if self._idleMessenger:
+            self._idleMessenger.join()
             
-    def idleMessage(self):
+    def _idleMessage(self):
         timer = DISCONNECT_TIMEOUT
-        while self.isClosing and timer > 0:
-            print(f"INFO     |      [SERVER IDLE] Closing in {timer} seconds")
+        while self._isClosing and timer > 0:
+            logging.info(f"[SERVER IDLE] Closing in {timer} seconds")
             timer -= DISCONNECT_TIMEOUT//4
             time.sleep(DISCONNECT_TIMEOUT//4)
 
     # TODO: Make me daemon thread
-    def checkAndClose(self):
-        if len(self.connections) == 0 and self.isClosing == True:
-            self.isRunning = False
-            self.shutdown()
+    def _checkAndClose(self):
+        if len(self._connections) == 0 and self._isClosing == True:
+            self._isRunning = False
+            self._shutdown()
         else:
             pass
-        # else:
-        #     # Restart the auto-close timer
-        #     self.startAutoCloseTimer()
     
 # TODO: Add json serialization
 # TODO: Add inter-client communication
+# TODO: Add file sending
 
-server1 = Server()
-server1.start()
+# server1 = Server()
+# server1.start()

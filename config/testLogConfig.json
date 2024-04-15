@@ -2,14 +2,14 @@
     "version": 1,
     "formatters": {
         "standard": {
-                "format": "%(filename)-20s | %(funcName)-30s \t\t %(message)s"
+                "format": "%(asctime)s | %(filename)-20s | %(funcName)-30s \t\t %(message)s"
             }
     },
     "handlers": {
         "file_handler": {
             "class": "logging.FileHandler",
             "formatter": "standard",
-            "filename": "Tests/serverTests.log"
+            "filename": "logs/serverTests.log"
         }
     },
     "root": {

@@ -20,30 +20,34 @@
 # print(unpacked_data1)  # This will print the unpacked data1 (1234)
 # print(unpacked_data2.decode('utf-8'))  # This will print the unpacked data2 (ABCD)
 
-import socket
-import threading
+# import socket
+# import threading
 
-# Create a socket
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('localhost', 8888))
-server_socket.listen(5)
+# # Create a socket
+# server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# server_socket.bind(('localhost', 8888))
+# server_socket.listen(5)
 
-# Function to accept incoming connections
-def accept_connections():
-    while True:
-        client_socket, client_address = server_socket.accept()
-        print(f"Accepted connection from {client_address}")
-        client_socket.send(b"Hello from server!")
-        client_socket.close()  # Close the client socket immediately
+# # Function to accept incoming connections
+# def accept_connections():
+#     while True:
+#         client_socket, client_address = server_socket.accept()
+#         print(f"Accepted connection from {client_address}")
+#         client_socket.send(b"Hello from server!")
+#         client_socket.close()  # Close the client socket immediately
 
-# Start the accepting thread
-accept_thread = threading.Thread(target=accept_connections)
-accept_thread.start()
+# # Start the accepting thread
+# accept_thread = threading.Thread(target=accept_connections)
+# accept_thread.start()
 
-# Stop accepting new connections after some time
-# This will close the server socket and prevent new connections
-# Existing connections will continue until closed by the client or server
-import time
-time.sleep(10)  # Wait for 10 seconds
-server_socket.close()
-print("Server socket closed. No longer accepting new connections.")
+# # Stop accepting new connections after some time
+# # This will close the server socket and prevent new connections
+# # Existing connections will continue until closed by the client or server
+# import time
+# time.sleep(10)  # Wait for 10 seconds
+# server_socket.close()
+# print("Server socket closed. No longer accepting new connections.")
+
+from src.helper import isPortAvailable, SERVER_PORT_ADDRESS
+
+print(isPortAvailable("localhost", SERVER_PORT_ADDRESS))

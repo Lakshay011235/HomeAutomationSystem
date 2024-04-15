@@ -73,7 +73,7 @@ def encodeResponsePacket(response_code, response_message, encoding='utf-8'):
 
 def decodeResponsePacket(msg, header_size=64, encoding='utf-8'):
     msg = msg.decode(encoding)
-    responseCode = msg[1:4]
+    responseCode = int(msg[1:4])
     response = msg[5:]
     return {
         'responseCode': responseCode, 
