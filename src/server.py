@@ -59,7 +59,7 @@ class Server:
         connected = True
         
         if connected:
-            self._resetAutoCloseTimer()
+            self._resetAutoCloseTimer() 
             
         while connected:
             # print(decodeMessagePacket(conn.recv(5000)))
@@ -166,3 +166,4 @@ class Server:
 
 # server1 = Server()
 # server1.start()
+
