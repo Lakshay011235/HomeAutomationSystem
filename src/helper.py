@@ -80,5 +80,8 @@ def decodeResponsePacket(msg, header_size=64, encoding='utf-8'):
         'message':response
         }
 
-def makeMessagePacketV2():
-    pass
+# ----------------------------------------------------------------
+# MESSAGE PROTOCOL_VERSION 1.0
+"""
+    [message length: int][message: string]
+"""

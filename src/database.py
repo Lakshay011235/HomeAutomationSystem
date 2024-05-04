@@ -364,6 +364,9 @@ def getAllUsers():
 def decryptPassword(password : str, secretKey : str = ""):
     return password
     
+def encryptPassword(password : str, publicKey : str = ""):
+    return password
+
 def test_create_del(debug):
     u1 = (101, "Foreman", "foreman.md@house.com", "foreman.md")
     print("Test Create: ", createUser(u1, debug))
@@ -377,13 +380,13 @@ def test_create_del(debug):
 # print("Test Delete:", deleteUser(1001, "foreman.md", True))
 
 # test_create_del(True)
-getAllUsers()
+# getAllUsers()
 
 updateDict1 = {"email" : "john_doe@example.com", "password" : "password123", "name" : "test"}
 updateDict2 = {"email" : "test@example.com", "password" : "password1234", "name" : "test"}
 # print(updateUser(1, "password1234", updateDict1, True))
 
-test_read(True)
+# test_read(True)
 
 getAllUsers()
 closeConnection()

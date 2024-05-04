@@ -20,34 +20,54 @@
 # print(unpacked_data1)  # This will print the unpacked data1 (1234)
 # print(unpacked_data2.decode('utf-8'))  # This will print the unpacked data2 (ABCD)
 
-# import socket
-# import threading
+# from src.helper import isPortAvailable, SERVER_PORT_ADDRESS
 
-# # Create a socket
-# server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# server_socket.bind(('localhost', 8888))
-# server_socket.listen(5)
+# print(isPortAvailable("localhost", SERVER_PORT_ADDRESS))
 
-# # Function to accept incoming connections
-# def accept_connections():
-#     while True:
-#         client_socket, client_address = server_socket.accept()
-#         print(f"Accepted connection from {client_address}")
-#         client_socket.send(b"Hello from server!")
-#         client_socket.close()  # Close the client socket immediately
+from abc import ABC, abstractmethod
+import json
 
-# # Start the accepting thread
-# accept_thread = threading.Thread(target=accept_connections)
-# accept_thread.start()
+packet = {
+    "head": {},
+    "body": {}
+}
 
-# # Stop accepting new connections after some time
-# # This will close the server socket and prevent new connections
-# # Existing connections will continue until closed by the client or server
-# import time
-# time.sleep(10)  # Wait for 10 seconds
-# server_socket.close()
-# print("Server socket closed. No longer accepting new connections.")
+# Custom Packet Parent
+class PacketGod(ABC):
+    def __init__(self, message, protocol):
+        self.message = message
+        self.protocol = protocol
+        
+    @abstractmethod
+    def head(self):
+        pass
 
-from src.helper import isPortAvailable, SERVER_PORT_ADDRESS
+    @abstractmethod
+    def body(self):
+        pass
+    
+    def protocol(self):
+        return self.protocol
+    
+    def to_json(self):
+        return json.dumps(self.__dict__)
 
-print(isPortAvailable("localhost", SERVER_PORT_ADDRESS))
+    @classmethod
+    def from_json(cls, json_data):
+        data_dict = json.loads(json_data)
+        return cls(**data_dict)
+    
+# Custom Packet
+class GeneralPacket(PacketGod):
+    def head(self):
+        return self.message[:2]
+    def body(self):
+        return self.message[2:]
+
+p1 = GeneralPacket("hello", "v1")
+
+jp1 = p1.to_json()
+print(jp1)
+
+p2 = GeneralPacket.from_json(jp1)
+print(p2.body())
