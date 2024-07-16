@@ -55,28 +55,28 @@ class Server:
         self._idleMessenger = None
     
     def _handleClient(self, conn, addr):
-        logging.info(f"[NEW CONNECTION] {addr} connected.")
+        logging.warning(f"[NEW CONNECTION] {addr} connected.")
+        self._connections[addr] = []
         connected = True
         
         if connected:
             self._resetAutoCloseTimer() 
             
-        while connected:
-            # print(decodeMessagePacket(conn.recv(5000)))
-            
-            msgLength = conn.recv(HEADER_SIZE).decode(FORMAT)
-            if msgLength:
-                msgLength = int(msgLength)
-                msg = conn.recv(msgLength).decode(FORMAT)
-                if msg == DISCONNECT_MESSAGE:
+        while connected:            
+            packet = PacketTemplate(conn.recv(5000))
+            if packet:
+                if packet.body.content == DISCONNECT_MESSAGE:
                     connected = False
-                # Save client data
-                self._saveClientData(addr, msg)
+
+                # Implement version check
                 
-                logging.info(f"[MESSAGE RECEIVED] {addr} | {msgLength} | {msg}")
-                conn.send(encodeResponsePacket(REQUEST_SUCCESS, msg))
+                # Save client data
+                self._saveClientData(addr, packet.to_dict())
+                
+                logging.info(f"[MESSAGE RECEIVED] {addr} | {packet.body.content}")
+                conn.send(PacketTemplate(header=Header(content=REQUEST_SUCCESS), body=Body(content=packet.body.content)).to_bytes())
             else:
-                conn.send(encodeResponsePacket(REQUEST_FAILURE, "Could not connect to server"))
+                conn.send(PacketTemplate(header=Header(content=REQUEST_FAILURE), body=Body("Could not connect to server")).to_bytes())
 
         conn.close()
         self._connections.pop(addr)
@@ -84,18 +84,14 @@ class Server:
         logging.info(f"[ACTIVE CONNECTIONS] {len(self._connections)}")
 
         # Check if all _connections are closed and start auto-close timer if needed
-        if len(self._connections) == 0:
+        if len(self._connections) == 0 and not self._isClosing:
             self._isClosing = True
             self._startAutoCloseTimer()
 
 
     def _saveClientData(self, addr, msg):
-        # Add time to msg
-        time.sleep(1)
         if addr in self._connections:
             self._connections[addr].append(msg)
-        else:
-            self._connections[addr] = [msg]
             
     def start(self):
         logging.info("[STARTING] server is starting...")

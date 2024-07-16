@@ -17,31 +17,12 @@ class Client:
         self._clientSocket.connect((SERVER_HOST_ADDRESS, SERVER_PORT_ADDRESS))
         self.history = []
 
-    def send(self, msg):
-        """
-        Sends a message to the connected server. \n
-        And receives the response from the server
-
-        Parameters
-        ----------
-        msg : str
-            A string containing the message to be sent.
-
-        Returns
-        -------
-        response : dict
-            Response from the server. __Message protocol version 1.0__\n
-            ```
-            {
-            'responseCode' : responseCode,
-            'message' : responseMessage
-            }
-            ```
-        """
-        packet = encodeMessagePacket(msg, HEADER_SIZE, FORMAT)
+    def send(self, msg="", packet = None):
+        if not isinstance(packet, PacketTemplate):
+            packet = PacketTemplate(body=Body(content=msg)).to_bytes()
         self._clientSocket.send(packet)
-        response = decodeResponsePacket(self._clientSocket.recv(2048))
-        self.history.append(response)
+        response = PacketTemplate(self._clientSocket.recv(5000))
+        self.history.append(response.to_dict())
         return response
 
     def close(self):
@@ -51,7 +32,8 @@ class Client:
         self._clientSocket.close()
     
 # client1 = Client()
-# client1.send("Hello, world!")
+# res = client1.send("Hello, world!")
+# print(res.body.to_dict())
 # # # asdf = str(input())
 # # send("Second message")
 # # # input()

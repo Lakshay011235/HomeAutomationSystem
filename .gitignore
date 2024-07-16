@@ -1,6 +1,9 @@
 .venv
 __pycache__
 *.log
+server.log
+serverTests.log
+/logs/*.log
 demo.py
 .env
 .vscode

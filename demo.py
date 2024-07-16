@@ -24,50 +24,55 @@
 
 # print(isPortAvailable("localhost", SERVER_PORT_ADDRESS))
 
-from abc import ABC, abstractmethod
-import json
+import threading
+import time
+from src.server import Server
+from src.client import Client
 
-packet = {
-    "head": {},
-    "body": {}
-}
+from src.helper import *
+a = PacketTemplate(header=Header(content="ASDFASDFASDf"), body=Body(content="ASDFASDf"))
+# c = PacketTemplate.from_dict(a.to_dict())
 
-# Custom Packet Parent
-class PacketGod(ABC):
-    def __init__(self, message, protocol):
-        self.message = message
-        self.protocol = protocol
+# print(f"|{c.header.protocol_version}|")
+# print(f"|{c.header.enc_type}|")
+# print(f"|{c.header.public_key}|")
+# print(f"|{c.header.encoding}|")
+# print(f"|{c.header.content}|")
+# print(f"|{c.body.content}|")
+
+
+server = Server()
+server_thread = threading.Thread(target=server.start)
+server_thread.start()
+
+def test():
+    client = Client()
+
+    response1 = client.send(a)
+    print(response1.header.content)
+
+    response2 = client.send(input())
+    print(response2.header.content)
+    response2 = client.send(input())
+    print(response2.header.content)
+
+    response3 = client.send("Disconnect")
+    print(response3.header.content)
+
+    # print(client.history)
+    client.close()
+
+c1 = threading.Thread(target=test)
+c2 = threading.Thread(target=test)
+c1.start()
+c2.start()
+
+for thread in threading.enumerate():
+    if thread != threading.current_thread():
+        thread.join()
         
-    @abstractmethod
-    def head(self):
-        pass
+        
 
-    @abstractmethod
-    def body(self):
-        pass
-    
-    def protocol(self):
-        return self.protocol
-    
-    def to_json(self):
-        return json.dumps(self.__dict__)
 
-    @classmethod
-    def from_json(cls, json_data):
-        data_dict = json.loads(json_data)
-        return cls(**data_dict)
-    
-# Custom Packet
-class GeneralPacket(PacketGod):
-    def head(self):
-        return self.message[:2]
-    def body(self):
-        return self.message[2:]
-
-p1 = GeneralPacket("hello", "v1")
-
-jp1 = p1.to_json()
-print(jp1)
-
-p2 = GeneralPacket.from_json(jp1)
-print(p2.body())
+# To close the server
+# server._startAutoCloseTimer()

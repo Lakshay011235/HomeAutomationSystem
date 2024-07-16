@@ -3,7 +3,6 @@ import json
 import pytest
 import threading
 import time
-import sys
 from src.server import Server
 from src.client import Client
 

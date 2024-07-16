@@ -18,7 +18,7 @@
         "console_handler": {
             "class": "logging.StreamHandler",
             "formatter": "simple",
-            "level": "INFO"
+            "level": "WARNING"
         }
     },
     "loggers": {
